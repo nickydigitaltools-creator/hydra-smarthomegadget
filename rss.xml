@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Smart Home Gadget Pro</title>
+    <link>https://smarthomegadgetpro.com</link>
+    <description>Best smart home devices reviewed</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Mar 2026 07:31:28 +0000</lastBuildDate>
+    <ns0:link href="https://smarthomegadgetpro.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Best Smart Home Devices Under $50</title>
+      <link>https://smarthomegadgetpro.com/articles/best-smart-home-devices-under-50.html</link>
+      <description>Looking for the best best smart home devices under $50? Our expert review compares top options to help you choose the right one for your needs and budget.</description>
+      <pubDate>Tue, 17 Mar 2026 07:32:34 +0000</pubDate>
+      <guid>https://smarthomegadgetpro.com/articles/best-smart-home-devices-under-50.html</guid>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,98 @@
+/* ============================================================
+   AI Affiliate Hydra — Shared Stylesheet
+   Clean, fast-loading, mobile-first design
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --accent: #f59e0b;
+  --text: #1e293b;
+  --muted: #64748b;
+  --bg: #f8fafc;
+  --white: #ffffff;
+  --border: #e2e8f0;
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(0,0,0,.12);
+  --max-w: 1100px;
+}
+
+body { font-family: system-ui, -apple-system, sans-serif; color: var(--text); background: var(--bg); line-height: 1.7; font-size: 16px; }
+
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---- Layout ---- */
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 1.25rem; }
+
+/* ---- Header ---- */
+header { background: var(--white); border-bottom: 1px solid var(--border); padding: .875rem 0; position: sticky; top: 0; z-index: 100; }
+header .container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem; }
+.logo { font-size: 1.35rem; font-weight: 700; color: var(--primary); }
+nav a { margin-left: 1.25rem; font-size: .95rem; color: var(--text); font-weight: 500; }
+nav a:hover { color: var(--primary); text-decoration: none; }
+
+/* ---- Hero ---- */
+.hero { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: var(--white); padding: 4rem 0 3rem; text-align: center; }
+.hero h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 800; margin-bottom: 1rem; }
+.hero p { font-size: 1.1rem; opacity: .9; max-width: 640px; margin: 0 auto 1.75rem; }
+.btn { display: inline-block; background: var(--accent); color: var(--text); padding: .75rem 2rem; border-radius: var(--radius); font-weight: 700; font-size: 1rem; transition: opacity .2s; }
+.btn:hover { opacity: .85; text-decoration: none; }
+
+/* ---- Cards Grid ---- */
+.section { padding: 3rem 0; }
+.section-title { font-size: 1.6rem; font-weight: 700; margin-bottom: 1.5rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+.card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); transition: transform .2s; }
+.card:hover { transform: translateY(-3px); }
+.card h3 { font-size: 1.05rem; margin-bottom: .5rem; }
+.card p { font-size: .9rem; color: var(--muted); margin-bottom: 1rem; }
+.card .tag { display: inline-block; background: #eff6ff; color: var(--primary); font-size: .75rem; padding: .2rem .6rem; border-radius: 99px; font-weight: 600; margin-bottom: .75rem; }
+
+/* ---- Article Page ---- */
+.article-wrap { display: grid; grid-template-columns: 1fr 300px; gap: 2rem; padding: 2.5rem 0; }
+@media (max-width: 768px) { .article-wrap { grid-template-columns: 1fr; } }
+.article-body h2 { font-size: 1.4rem; margin: 1.75rem 0 .75rem; }
+.article-body h3 { font-size: 1.15rem; margin: 1.25rem 0 .5rem; }
+.article-body p { margin-bottom: 1rem; }
+.article-body ul, .article-body ol { margin: .75rem 0 1rem 1.5rem; }
+.article-body li { margin-bottom: .4rem; }
+.article-meta { font-size: .85rem; color: var(--muted); margin-bottom: 1.5rem; }
+
+/* ---- Comparison Table ---- */
+.comp-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
+.comp-table th { background: var(--primary); color: var(--white); padding: .75rem 1rem; text-align: left; }
+.comp-table td { padding: .65rem 1rem; border-bottom: 1px solid var(--border); }
+.comp-table tr:nth-child(even) td { background: #f1f5f9; }
+.comp-table .aff-btn { background: var(--accent); color: var(--text); padding: .35rem .85rem; border-radius: var(--radius); font-weight: 700; font-size: .82rem; white-space: nowrap; }
+
+/* ---- FAQ ---- */
+.faq-item { border-bottom: 1px solid var(--border); padding: 1rem 0; }
+.faq-q { font-weight: 700; cursor: pointer; }
+.faq-a { margin-top: .5rem; color: var(--muted); font-size: .95rem; }
+
+/* ---- Sidebar ---- */
+.sidebar .widget { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; margin-bottom: 1.5rem; }
+.sidebar .widget h4 { font-size: 1rem; margin-bottom .75rem; font-weight: 700; }
+.sidebar .widget ul { list-style: none; }
+.sidebar .widget ul li { padding: .35rem 0; border-bottom: 1px solid var(--border); font-size: .9rem; }
+
+/* ---- Footer ---- */
+footer { background: var(--text); color: #94a3b8; padding: 2rem 0; font-size: .875rem; }
+footer .container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; }
+footer a { color: #94a3b8; }
+footer a:hover { color: var(--white); }
+.footer-links a { margin-right: 1rem; }
+
+/* ---- Breadcrumb ---- */
+.breadcrumb { font-size: .85rem; color: var(--muted); padding: .75rem 0; }
+.breadcrumb a { color: var(--muted); }
+.breadcrumb span { margin: 0 .35rem; }
+
+/* ---- Responsive ---- */
+@media (max-width: 640px) {
+  nav { display: none; }
+  .hero { padding: 2.5rem 0 2rem; }
+}
